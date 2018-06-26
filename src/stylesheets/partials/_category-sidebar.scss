@@ -1,0 +1,21 @@
+/**
+ * Category sidebar SCSS
+ */
+
+#categories {
+    width: 250px;
+    float: left;
+    
+    ul li a {
+        width: 100%;
+        height: auto;
+        background-color: #FFF;
+        border: 1px solid black;
+        padding: 10px;
+        
+        &.active {
+            background-color: blue;
+            color: #FFF;
+        }
+    }
+}

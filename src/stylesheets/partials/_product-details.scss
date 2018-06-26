@@ -1,0 +1,47 @@
+/**
+ * Product Details SCSS
+ */
+ 
+#product-modal {
+    &.active {
+        display: block;
+    }
+
+    display: none;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    #expand {
+        height: 100%;
+        width: 100%;
+        background-color: #FFF;
+        opacity: .7;
+    }
+    
+    #product-details {
+        background-color: #4ac7e9;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        color: #fefefe;
+        line-height: normal;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        font-size: 14px;
+        padding: 50px 70px;
+        
+        p {
+            display: block;
+        }
+    }
+ }

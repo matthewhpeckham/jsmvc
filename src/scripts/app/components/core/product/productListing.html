@@ -1,0 +1,10 @@
+<ul class="product-listing" id="product-list-{{id}}">
+  {{#list data}}
+    <li>
+        <a data-id="{{this.sku}}" href="{{urlSetting}}product/{{this.sku}}">
+            <img src="{{this.thumbnailImage}}" alt=""/>
+            <span>{{this.name}}</span>
+        </a>
+    </li>
+  {{/list}}
+</ul>

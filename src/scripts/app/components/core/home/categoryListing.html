@@ -1,0 +1,7 @@
+<ul>
+  {{#list data}}
+    <li>
+        <a data-id="{{this.id}}" data-name="{{this.cleanName}}" href="{{this.urlSetting}}categories/{{this.cleanName}}">{{this.name}}</a>
+    </li>
+  {{/list}}
+</ul>

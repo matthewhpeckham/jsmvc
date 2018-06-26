@@ -1,0 +1,35 @@
+/**
+ * Transition
+ *
+ * @params $args... - The "..." allows us to pass in multiple properties, instead of a single one.
+ */
+@mixin transition ($args...) {
+  -webkit-transition: $args;
+  	 -moz-transition: $args;
+ 	    -ms-transition: $args;
+  	   -o-transition: $args;
+  	  		transition: $args;
+}
+
+/**
+ * Opacity
+ *
+ * @param $opacity - Opacity value
+ */
+@mixin opacity($opacity: 1) {
+  -webkit-opacity: $opacity;
+  	 -moz-opacity: $opacity;
+  	  $opacity-ie: $opacity * 100;
+  	 	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=$opperc)";
+  				opacity: $opacity;
+  				 filter: alpha(opacity=$opacity-ie);
+}
+
+/**
+ * Transforms
+ */
+ @mixin transform($args...) {
+	-webkit-transform: $args;
+			-ms-transform: $args;
+					transform: $args;
+ }
